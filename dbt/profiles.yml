@@ -1,0 +1,9 @@
+
+banking_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ../ai-data-agent/data/banking.duckdb
+      schema: main
+      threads: 4

@@ -221,3 +221,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+*.duckdb
+*.duckdb.wal
+.user.yml
