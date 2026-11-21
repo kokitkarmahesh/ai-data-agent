@@ -1,6 +1,17 @@
 
 version: 2
 
+sources:
+  - name: banking
+    description: "Raw banking tables"
+    database: banking
+    schema: main
+
+    tables:
+      - name: customers
+      - name: accounts
+      - name: transactions
+
 models:
   - name: stg_customers
     description: "Cleaned customer records for banking analytics."
