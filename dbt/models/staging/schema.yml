@@ -10,3 +10,24 @@ models:
         data_tests:
           - unique
           - not_null
+
+  - name: customer_summary
+    description: "Customer-level account and transaction metrics"
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier"
+        data_tests:
+          - unique
+          - not_null
+      - name: total_accounts
+        description: "Number of accounts owned by the customer"
+        data_tests:
+          - not_null
+      - name: total_balance
+        description: "Combined balance across customer accounts"
+        data_tests:
+          - not_null
+      - name: total_transactions
+        description: "Number of transactions across customer accounts"
+        data_tests:
+          - not_null
